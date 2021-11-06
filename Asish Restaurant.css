@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#maindiv{
+	background-color: white;
+	width: 100%;
+	height: 83px;
+	display: flex;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	border-bottom: 3px solid black;
+}
+
+#maindiv #img{
+	width: 40%;
+    float: left;
+}
+
+#maindiv #img #logo{
+	padding-top: 3px;
+	padding-left: 50px;
+	width: 270px;
+}
+
+#maindiv #nav{
+	width: 60%;
+	display: flex;
+	justify-content: space-around;
+	margin-right: 20px;
+}	
+
+#maindiv #nav a{
+	font-family: Prompt;
+	font-size: 29px;
+	color: black;
+	text-decoration: none;
+	line-height: 290%;
+	font-family: 'Prompt', sans-serif;
+	animation: blink 3s infinite ease-in-out;
+	letter-spacing: 1.5px;
+}
+
+#maindiv #nav a:hover{
+	color: #F70808;
+}
+
+#imgslider{
+	height: 551px;
+	background-image: url(dish.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	animation: slider 10s infinite ease-in-out;
+}
+
+@keyframes slider{
+
+	0%{
+		background-image: url(east.jpg);
+	}
+    
+    20%{
+    	background-image: url(east.jpg);
+    }
+
+    40%{
+    	background-image: url(indo-chin.jpg);
+    }
+
+    60%{
+    	background-image: url(west.jpg);
+    }
+
+    80%{
+    	background-image: url(south.jpg);
+    }
+
+    100%{
+    	background-image: url(east.jpg);
+    }
+}
+
+#aboutuslb{
+	background: white;
+	height: 90px;
+	display: flex;
+}
+
+#aboutuslb #label{
+	font-family: Stick No Bills;
+	font-weight: 700;
+	font-size: 65px;
+	padding-left: 30px;
+	padding-top: 15px;
+	border-bottom: 7px solid black;
+}
+
+#maincon{
+	height: auto;
+	display: flex;
+}
+
+#maincon #para{
+	flex-basis: 50%;
+	background: #F7F7F7;
+}
+
+#maincon #para p{
+	font-family: Stick No Bills;
+	font-weight: 400;
+	font-size: 30px;
+	padding: 20px 20px;
+}
+
+#maincon #imgsl{
+	height: 400px;
+	flex-basis: 50%;
+	background-image:url(picshow/pic1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	animation: show 20s infinite linear;
+}
+
+@keyframes show{
+	0%{
+		background-image:url(picshow/pic1.jpg)
+	}
+
+	20%{
+		background-image:url(picshow/pic2.jpg)
+	}
+
+	40%{
+		background-image:url(picshow/pic3.jpg)
+	}
+
+	60%{
+		background-image:url(picshow/pic4.jpg)
+	}
+
+	80%{
+		background-image:url(picshow/pic5.jpg)
+	}
+
+	100%{
+		background-image:url(picshow/pic6.jpg)
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
